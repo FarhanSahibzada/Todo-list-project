@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.todo-app {
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0,0.5);
+    background-color: white;
+    padding: 50px 60px;
+
+    h2 {
+        font-size: 22px;
+        color: rgb(34, 27, 27);
+    }
+    button{
+        background-color: rgb(236, 202, 7);
+        padding: 15px;
+border-radius: 10px;
+outline: none;
+border: none;
+
+    }
+}
+
+#input-text {
+    margin-top: 20px;
+    width: 250px;
+    height: 35px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px ridge ;
+    background-color: #edeef0;
+}
+
+.hil{
+    animation: hil 1s ;
+}
+@keyframes hil {
+    0%{
+        transform: translateX(10px);
+    }
+    25%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(10px);
+
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+
+}
+
+#list-container{
+
+    list-style-type: none;
+    margin-top: 20px;
+    font-size: 18px;
+
+    li{
+        margin-bottom: 10px;
+        padding: 10px;
+        padding-left: 40px;
+        cursor: pointer;
+        background-color: #edeef0;
+    position: relative;
+    span{
+        position: absolute;
+        right: 5px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        font-size: 23px;
+
+    }
+span:hover{
+    background-color: white;
+}
+}
+}
+
+
+.checked{
+    text-decoration: line-through;
+    font-style: italic;
+    background-image: url(images/tick2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px;
+
+}
